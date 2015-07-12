@@ -51,7 +51,7 @@ add_action('wp_enqueue_scripts', 'my_theme_styles', 20);
 
 function child_momentous_display_credit_link() { 
 		
-	printf('Сделано с любовью<a href="http://stefantsov.com">.</a>');
+	printf('The site of <a href="http://stefantsov.com">Dima Stefantsov</a>.');
 }
 
 function child_momentous_display_site_title() { ?>
@@ -160,8 +160,8 @@ function momentous_display_pagination() {
 			'format' => '?paged=%#%',				
 			'current' => max( 1, get_query_var( 'paged' ) ),
 			'total' => $wp_query->max_num_pages,
-			'next_text' => '<span class="goto-older-posts">Следующая →</span>',
-			'prev_text' => '<span class="goto-newer-posts">← Предыдущая</span>',
+			'next_text' => '<span class="goto-older-posts">Next →</span>',
+			'prev_text' => '<span class="goto-newer-posts">← Previous</span>',
 			'add_args' => false
 		) );
 
@@ -196,18 +196,8 @@ function momentous_display_pagination() {
 // Filters.
 // ========
 
-// Localization.
-add_filter( 'get_the_archive_title', function ($title) {
-    if ( is_category() ) {
-		$title = sprintf("Тема: <span>%s</span>", single_cat_title('', false));
-	} elseif ( is_tag() ) {
-		$title = sprintf("Тег: <span>%s</span>", single_tag_title('', false));
-	} elseif ( is_month() ) {
-        $title = sprintf("Архив за <span>%s</span>", get_the_date('F Y'));
-    }
 
-    return $title;
-});
+
 
 
 
