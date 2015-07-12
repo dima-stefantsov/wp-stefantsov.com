@@ -1,5 +1,5 @@
 <!DOCTYPE html><!-- HTML 5 -->
-<html lang="ru">
+<html <?php language_attributes(); ?>>
 <head>
 	<meta charset="<?php bloginfo( 'charset' ); ?>" />
 	<meta name="viewport" content="width=device-width, initial-scale=1">
@@ -16,8 +16,8 @@
     (function (d, w, c) {
         (w[c] = w[c] || []).push(function() {
             try {
-                w.yaCounter31383978 = new Ya.Metrika({
-                    id:31383978,
+                w.yaCounter17808430 = new Ya.Metrika({
+                    id:17808430,
                     clickmap:true,
                     trackLinks:true,
                     accurateTrackBounce:true
@@ -37,7 +37,7 @@
         } else { f(); }
     })(document, window, "yandex_metrika_callbacks");
 </script>
-<noscript><div><img src="https://mc.yandex.ru/watch/31383978" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+<noscript><div><img src="https://mc.yandex.ru/watch/17808430" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
 <!-- /Yandex.Metrika counter -->
 
 <?php // Get Theme Options from Database
