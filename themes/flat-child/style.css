@@ -30,3 +30,7 @@
 .entry-content li {
     margin-bottom: 1em;
 }
+
+#secondary .toggle-sidebar {
+    display: none;
+}
