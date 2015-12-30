@@ -12,7 +12,6 @@
  Text Domain:  flat-child
 */
 
-
 .hentry .entry-title {
 	word-wrap: break-word;
 }
@@ -26,6 +25,8 @@
 
 .crayon-syntax textarea[readonly] {
   cursor: inherit !important;
-  /*background-color: #eeeeee;*/
-  /*opacity: 1;*/
+}
+
+.entry-content li {
+    margin-bottom: 1em;
 }
